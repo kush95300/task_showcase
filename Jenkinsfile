@@ -4,7 +4,7 @@ pipeline {
     }
      environment {
         IMAGE = 'santosh_nginx'
-        VERSION    = 'v1'
+        VERSION    = 'v2'
     }
     stages {
 
