@@ -3,14 +3,14 @@ pipeline {
         label 'webserver'
     }
      environment {
-        IMAGE = 'my_nginx'
-        VERSION    = 'latest'
+        IMAGE = 'santosh_nginx'
+        VERSION    = 'v1'
     }
     stages {
 
         stage('scm') {
             steps {
-                git branch: 'main', url: 'https://github.com/your_repo_with_dockerfle_and_webcode.git'
+                git branch: 'main', url: 'https://github.com/kush95300/task_showcase.git'
                 stash includes: '*' , name: 'nginx-repo'
             }
         }
